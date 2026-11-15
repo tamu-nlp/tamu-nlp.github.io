@@ -156,7 +156,13 @@ img { display: block; max-width: 100%; }
 
 .member-grid li { padding: 8px 0; border-top: 1px solid var(--line); }
 
-.more { font-size: 0.9rem; color: var(--muted); margin: 16px 0 0; }
+.table-scroll { overflow-x: auto; }
+.alumni-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.94rem; }
+.alumni-table th, .alumni-table td { font-weight: 400; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.alumni-table th[scope="row"] { font-weight: 500; }
+.alumni-table thead th { color: var(--maroon); background: var(--paper); font-size: 0.86rem; font-weight: 600; }
+
+.directory-links, .more { font-size: 0.9rem; color: var(--muted); margin: 16px 0 0; }
 .more { display: flex; flex-wrap: wrap; gap: 3px 18px; }
 
 .news, .papers { list-style: none; margin: 0; padding: 0; }
@@ -214,6 +220,8 @@ img { display: block; max-width: 100%; }
   .faculty summary { margin: 0; }
   .faculty-links { justify-content: start; }
   .member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .alumni-table { font-size: 0.86rem; }
+  .alumni-table th, .alumni-table td { padding: 7px 4px; vertical-align: top; }
   .news li, .paper { grid-template-columns: 1fr; row-gap: 4px; }
   .paper { grid-template-areas: "venue" "title" "authors"; }
   .footer__row { grid-template-columns: 1fr; }
