@@ -182,6 +182,29 @@ img { display: block; max-width: 100%; }
 .paper__authors { grid-area: authors; color: var(--muted); font-size: 0.94rem; }
 .paper__authors b { color: var(--ink); font-weight: 500; }
 
+.papers-scroll {
+  max-height: 34rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 18px;
+  scrollbar-color: #bdaba1 transparent;
+}
+.papers-scroll:focus-visible { outline-offset: 2px; }
+.section .papers__year {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 10px 0 8px;
+  background: white;
+  border-bottom: 2px solid var(--maroon);
+  color: var(--maroon);
+  font: 600 1rem var(--serif);
+}
+.papers-scroll .papers .paper:last-child { border-bottom: 0; }
+
 .footer { background: var(--maroon); color: white; padding: 36px 0; font-size: 0.92rem; }
 .footer__row { display: grid; grid-template-columns: 1fr 1fr 0.85fr; gap: 28px; }
 .footer__brand img { width: 216px; height: auto; }
@@ -224,5 +247,6 @@ img { display: block; max-width: 100%; }
   .alumni-table th, .alumni-table td { padding: 7px 4px; vertical-align: top; }
   .news li, .paper { grid-template-columns: 1fr; row-gap: 4px; }
   .paper { grid-template-areas: "venue" "title" "authors"; }
+  .papers-scroll { max-height: 28rem; padding: 0 12px; }
   .footer__row { grid-template-columns: 1fr; }
 }
