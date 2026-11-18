@@ -183,7 +183,7 @@ img { display: block; max-width: 100%; }
 .paper__authors b { color: var(--ink); font-weight: 500; }
 
 .papers-scroll {
-  max-height: 34rem;
+  max-height: 70rem;
   overflow-y: auto;
   overscroll-behavior: contain;
   border: 1px solid var(--line);
